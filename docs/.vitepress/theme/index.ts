@@ -1,14 +1,1 @@
-import DefaultTheme from "vitepress/theme-without-fonts";
-import * as d3 from "d3";
-import {useData} from "vitepress";
-import CustomLayout from "./CustomLayout.vue";
-import "./custom.css";
-
-export default {
-  extends: DefaultTheme,
-  Layout: CustomLayout,
-  enhanceApp({app, router}) {
-    globalThis.d3 = d3; // for console testing!
-    Object.defineProperty(app.config.globalProperties, "$dark", {get: () => useData().isDark.value});
-  }
-};
+importDefaultThemefrom"vitepress/theme-without-fonts";import*asd3from"d3";import{useData}from"vitepress";importCustomLayoutfrom"./CustomLayout.vue";import"./custom.css";exportdefault{extends:DefaultTheme,Layout:CustomLayout,enhanceApp({app,router}){globalThis.d3=d3;//forconsoletesting!Object.defineProperty(app.config.globalProperties,"$dark",{get:()=>useData().isDark.value});}};

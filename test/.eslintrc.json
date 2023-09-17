@@ -1,12 +1,1 @@
-{
-  "extends": "eslint:recommended",
-  "parserOptions": {
-    "sourceType": "module",
-    "ecmaVersion": 11
-  },
-  "env": {
-    "es6": true,
-    "browser": true,
-    "mocha": true
-  }
-}
+{"extends":"eslint:recommended","parserOptions":{"sourceType":"module","ecmaVersion":11},"env":{"es6":true,"browser":true,"mocha":true}}

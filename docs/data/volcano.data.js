@@ -1,8 +1,1 @@
-import fs from "node:fs";
-
-export default {
-  watch: ["../public/data/volcano.json"],
-  load([file]) {
-    return JSON.parse(fs.readFileSync(file, "utf-8"));
-  }
-};
+importfsfrom"node:fs";exportdefault{watch:["../public/data/volcano.json"],load([file]){returnJSON.parse(fs.readFileSync(file,"utf-8"));}};
